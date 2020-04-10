@@ -7,28 +7,65 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bevan&family=Exo+2:wght@700&family=Francois+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bevan&family=Exo+2:wght@700&family=Francois+One&display=swap"
+        rel="stylesheet">
     <title>Arnold Kibira</title>
 </head>
 
 <body>
-    <nav class="navbar">
+    <nav class="navbar fixed-top">
         <h3>ARNOLD</h3>
         <div class="navbar-items" onclick="openNav()">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
         </div>
-    </nav>
-    <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-            <a href="/">Home</a>
-            <a href="#">About Me</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="/">Home</a>
+                <a href="#about" onclick="closeNav()">About Me</a>
+                <a href="#projects"onclick="closeNav()" >Projects</a>
+                <a href="#contact"onclick="closeNav()" >Contact</a>
+            </div>
         </div>
+    </nav>
+    <div class="container">
+        <div class="landing">
+            <div class="box">
+                <div class="title">
+                    <span class="block"></span>
+                    <h1>Arnold Kibira <span></span></h1>
+                </div>
+                <div class="role">
+                    <div class="block"></div>
+                    <p>Software Developer</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- About me secition -->
+        <div id="about">
+            <h3>about me</h3>
+
+        </div>
+        <!-- About me secition -->
+        <!-- About me secition -->
+        <div id="projects">
+            <h3>my projects</h3>
+
+        </div>
+        <!-- About me secition -->
+        <!-- About me secition -->
+        <div id="contact">
+            <h3>contact me</h3>
+
+        </div>
+        <!-- About me secition -->
+
     </div>
+
+
 
 </body>
 <script src="/assets/index.js"></script>
