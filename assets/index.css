@@ -57,10 +57,14 @@ body {
   }
 }
 
-.navbar {
+.navbar-items {
   display: inline-block;
   cursor: pointer;
   float: right;
+}
+
+.navbar h3{
+    font-family: 'Exo 2', sans-serif;
 }
 
 .bar1,
