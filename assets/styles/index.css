@@ -353,7 +353,7 @@ body {
 }
 
 #contact ul {
-margin-top: 35%;
+margin-top: 15%;
   list-style: none;
   display: flex;
 }
@@ -365,5 +365,7 @@ margin-top: 35%;
 #contact .modal-content {
   background: rgb(44, 43, 43);
 }
-/* carousel */
-/* carousel */
+
+footer{
+  background-color: #080808;
+}
