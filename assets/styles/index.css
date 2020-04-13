@@ -353,9 +353,9 @@ body {
 }
 
 #contact ul {
-  margin: 30%;
+margin-top: 35%;
   list-style: none;
-  display: inline-flex;
+  display: flex;
 }
 
 #contact li {
