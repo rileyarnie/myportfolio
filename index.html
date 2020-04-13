@@ -215,10 +215,9 @@
                         <div class="card-body">
                             <h5 class="card-title">La Casa Della Pizza</h5>
                             <p class="card-text">
-                                This is a pizza website made with HTML, CSS and
-                                JavaScript that allows users to either order pizza from the menu or build their
-                                own their pizza and
-                                then see their total order on checkout.
+                                A pizza website made with HTML, CSS and
+                                JavaScript that allows users to order pizza from the menu or build their
+                                own and checkout.
                             </p>
                             <div class="row">
                                 <div class="col-sm-5">
@@ -330,7 +329,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Instagram Clone</h5>
                             <p class="card-text">
-                                An Instagram clone created using ReactJs for the frontend and
+                                An Instagram clone web application created using ReactJs for the frontend and
                                 Python-Django and Graphql for the backend.
                             </p>
                             <div class="row">
@@ -391,11 +390,13 @@
         <section id="contact">
             <h2 style="text-align: center;">contact.</h2>
             <p class="text-center w-responsive mx-auto mb-5">If you like what you see, checkout my boucny github for
-                more and are if willing to reach out. Email me <img
+                more and if willing to reach out. Email me <img
                     src="https://img.icons8.com/plasticine/48/000000/happy.png" /> </p>
 
 
             <ul>
+                <li></li>
+                <li></li>
                 <li class="wow infinite bounce">
                     <a href="https://github.com/rileyarnie">
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40"
@@ -462,18 +463,18 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <form>
+                            <form id="contactForm" class="gform pure-form pure-form-stacked" method="POST"
+                                onsubmit="sendMail()" data-email="example@email.net">
                                 <div class="row">
                                     <div class="col">
-                                        <input type="text" class="form-control" placeholder="First name">
-                                    </div>
-                                    <div class="col">
-                                        <input type="text" class="form-control" placeholder="Last name">
+                                        <input id="name" name="name" type="text" class="form-control"
+                                            placeholder="Your Name">
                                     </div>
                                 </div>
                                 <div class="row mt-2">
                                     <div class="col">
-                                        <input type="email" class="form-control" placeholder="Email Address">
+                                        <input id="email" name="email" type="email" class="form-control" required
+                                            placeholder="Email Address">
                                     </div>
                                 </div>
                                 <div class="row mt-2">
@@ -483,15 +484,27 @@
                                 </div>
                                 <div class="row mt-2">
                                     <div class="col">
-                                        <input type="text" class="form-control" placeholder="Message">
+                                        <textarea id="message" name="message" type="text" rows="7" class="form-control"
+                                            placeholder="Message..."></textarea>
                                     </div>
                                 </div>
 
+                                <!-- <div class="modal-footer">
+                                    <button type="button" class="btn btn-outline-danger"
+                                action="https://script.google.com/macros/s/AKfycbz3cl9cfzsWi0gTzOsMpB2AMvYQAZOsP_gFKNfY/exec"         data-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-outline-primary" >Send</button>
+                                </div> -->
+
+                                <div class="thankyou_message" style="display:none;">
+                                    <h4><em>Thanks</em> for reaching out!
+                                        I will get back to you as soon as possible!</h4>
+                                </div>
                             </form>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-outline-primary">Submit</button>
+                            <button type="button" class="btn btn-outline-danger" onclick="reset()"
+                                data-dismiss="modal">Close</button>
+                            <button type="submit" form="contactForm" class="btn btn-outline-primary">Send</button>
                         </div>
                     </div>
                 </div>
@@ -499,7 +512,6 @@
             <!-- contact -->
         </section>
         <!-- contact secition -->
-
     </div>
 
 
@@ -516,6 +528,8 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
 <script src="/assets/scripts/wow.min.js"></script>
+<!-- Submit the Form to Google Using "AJAX" -->
+<script data-cfasync="false" type="text/javascript" src="./assets/scripts/form-submission-handler.js"></script>
 <script>
     new WOW().init();
 </script>
